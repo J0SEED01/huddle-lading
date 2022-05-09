@@ -1,0 +1,395 @@
+/*# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pink: hsl(322, 100%, 66%)
+- Light Pink: hsl(321, 100%, 78%)
+- Light Red: hsl(0, 100%, 63%)
+
+### Neutral
+
+- Very Dark Cyan: hsl(192, 100%, 9%)
+- Very Pale Blue: hsl(207, 100%, 98%)
+
+## Typography
+
+### Headings
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 700
+
+### Body
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400, 600, 700
+
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/)*/
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+  
+
+body{
+    min-height: 100vh;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.heading{
+    color: hsl(192, 100%, 9%);
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.paragraph{
+    columns: hsl(207, 100%, 98%);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.button{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    background-color: transparent;
+    color: white;
+    border: none;
+    text-transform: capitalize;
+    border-radius: 50px;
+    transition: .3s;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    padding: 0 3%;
+}
+
+.header__top{  
+    margin-top: 60px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button--top{
+    color: hsl(322, 100%, 66%);
+    border: 1px solid hsl(322, 100%, 66%);
+    padding: 0 20px;
+    box-shadow: 0 0 3px 0 hsl(322, 100%, 66%);
+    font-size: 13px;
+}
+
+.header__main{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.main__paragraph{
+    width: 470px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.button--main,
+.button--section{
+    background-color: hsl(322, 100%, 66%);
+    padding: 15px 50px;
+    margin-bottom: 85px;
+    box-shadow: 0 10px 15px 0 lightgrey;
+}
+
+.main__img{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700%;
+    height: 500px;
+}
+
+.header__footer{
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: capitalize;
+}
+
+.section__img{
+    width: 20px;
+    height: 20px;
+}
+
+.section__number{
+    color: hsl(192, 100%, 9%);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+.section__paragraph{
+    opacity: 50%;
+}
+
+
+.main__section{
+    height: 410px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+    
+}
+
+.section__item{
+    width: 35%;
+}
+
+.img__section{
+    width: 50%;
+    height: 400px;
+}
+
+.section--4{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.button--section{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer{
+    background-color:hsl(192, 100%, 9%) ;
+    color: white;
+    padding: 50px 3% 0 3%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.paragraph--footer{
+    width: 50%;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.footer__data{
+    width: 45%;
+    margin-bottom: 40px;
+}
+
+.footer__data img{
+    filter: brightness(0) saturate(100%) invert(80%) sepia(7%) saturate(2%) hue-rotate(84deg) brightness(100%) contrast(1000%);
+    margin-bottom: 20px;
+}
+
+.logo__contact{
+    display: flex;
+}
+
+.logo__contact .contact__text{
+    margin-left: 20px;
+}
+
+.footer__newsletter{
+    width: 50%;
+}
+
+.newsletter__title{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.newsletter__input{
+    border: none;
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.button--footer{
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 10px;
+    margin-left: 20px;
+    width: 30%;
+    padding: 15px 0;
+}
+
+.footer__web{
+    width: 40%;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.web__img{
+    filter: brightness(0) saturate(100%) invert(80%) sepia(7%) saturate(2%) hue-rotate(84deg) brightness(100%) contrast(1000%);
+    width: 40px;
+    height: 40px;
+    padding-right: 10px;
+}
+
+@media (hover: hover) {
+    
+    .button--top:hover{
+        cursor: pointer;
+        color: hsl(321, 100%, 78%);
+        border: 1px solid hsl(321, 100%, 78%);
+        box-shadow: 0 0 3px 0  hsl(321, 100%, 78%);   
+        transition: .6s;
+    }
+
+    .button--main:hover,
+    .button--section:hover,
+    .button--footer:hover{
+        cursor: pointer;
+        background-color: hsl(321, 100%, 78%);
+        
+    }
+
+    .web__img:hover{
+        filter: brightness(0) saturate(100%) invert(95%) sepia(83%) saturate(7498%) hue-rotate(105deg) brightness(100%) contrast(109%);
+    }
+
+}
+
+@media only screen and (max-width: 750px){
+    
+    .header,
+    .main{
+        padding: 0 30px;
+    }
+   
+    .main__img{
+        max-width: 100%;
+    }
+
+
+    .header__footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__section{
+        margin-bottom: 100px;
+    }
+
+    .main__paragraph{
+        width: 100%;
+    }
+    
+
+    .main__section{
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section__item{
+        width: 90%;
+    }
+    
+    .img__section{
+        width: 90%;    
+        order: -1;
+        margin-bottom: 100px;
+    }
+
+    .section--4 .button{
+        width: 100%;
+    }
+
+   .footer{
+       width: 100%;
+       text-align: center;
+   }
+
+   .footer__data > img{
+       margin-left: auto;
+       margin-right: auto;
+   }
+
+ 
+
+   .data__logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+
+
+    .footer__data,
+    .footer__newsletter,
+    .footer__web,
+    .paragraph--footer{
+        width: 100%;
+    }
+
+    .footer__newsletter{
+        order: -1
+    }
+
+    .newsletter__input,
+    .button--footer{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .button--footer{
+        margin-left: 0;
+    }
+
+    .footer__web{
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 450px){
+
+    .header__top{
+        flex-direction: column;
+    }
+
+    .header__top img{
+        margin-bottom: 60px;
+    }
+
+    .header__top .button{
+        padding: 15px 0;
+    }
+}
